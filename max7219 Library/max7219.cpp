@@ -72,7 +72,7 @@ void max7219::set_buffer( bool new_buffer[8][8*max7219_Amount] ){
 /// Returns a bool from the array
 /// \details
 /// This function returns a bool at a given place in the array.
-/// Starting at 1for row and column.
+/// Starting at 0 for row and column.
 bool max7219::get_bool_buffer( int row, int column ){ return buffer[row][column]; }
 
 /// \brief
