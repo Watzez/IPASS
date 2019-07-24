@@ -11,11 +11,7 @@ obstacle::obstacle( max7219 & matrix, int obstacle_number, int column, int rando
 	row1( 0 ),				/// Row 1-3 of object
 	row2( 0 ),
 	row3( 0 )
-{
-	matrix.set_pixel( row1, column, 1 );
-	matrix.set_pixel( row2, column, 1 );
-	matrix.set_pixel( row3, column, 1 );
-}
+{}
 
 /// Updates obstacle to check if it has left the screen ifso it generates a new random number and writes the new obstacle to the screen
 void obstacle::update(){
